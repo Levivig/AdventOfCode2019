@@ -14,14 +14,14 @@ def part1():
         total = 0
         for line in file:
             mass = int(line)
-            total += int(mass / 3.0) - 2
-        print("Part 1: {total}".format(total=total))
+            total += mass // 3.0 - 2
+        print("Part 1: {}".format(total))
 
 
 def getFuelFor(mass):
     if mass <= 0:
         return 0
-    fuel = int(mass / 3.0) - 2
+    fuel = mass // 3.0 - 2
     if fuel <= 0:
         return 0
     return fuel + getFuelFor(fuel)
@@ -33,7 +33,7 @@ def part2():
         for line in file:
             mass = int(line)
             total += getFuelFor(mass)
-        print("Part 2: {total}".format(total=total))
+        print("Part 2: {}".format(total))
 
 
 def main():
