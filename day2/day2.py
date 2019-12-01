@@ -11,20 +11,19 @@ inputfile = os.path.join(dirname, 'input.txt')
 
 def part1():
     with open(inputfile) as file:
-            for line in file:
-                print(line)
+        for line in file:
+            print(line)
 
 
 def part2():
     with open(inputfile) as file:
-            for line in file:
-                print(line)
+        for line in file:
+            print(line)
 
 
 def main():
     part1()
     part2()
-    print("hello")
 
 
 if __name__ == "__main__":
