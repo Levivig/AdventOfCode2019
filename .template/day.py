@@ -9,21 +9,21 @@ dirname = os.path.dirname(__file__)
 inputfile = os.path.join(dirname, 'input.txt')
 
 
-def part1():
-    with open(inputfile) as file:
-        for line in file:
-            print(line)
+def part1(data):
+    for line in data:
+        print(line)
 
 
-def part2():
-    with open(inputfile) as file:
-        for line in file:
-            print(line)
+def part2(data):
+    for line in data:
+        print(line)
 
 
 def main():
-    part1()
-    part2()
+    with open(inputfile) as f:
+        data = f.read().splitlines()
+    part1(data)
+    part2(data)
 
 
 if __name__ == "__main__":
